@@ -14,9 +14,7 @@
 
 #### Desktop Version
 
-![Desktop Layout](./Screenshot%20from%202022-10-25%2010-40-10.png)
-![Desktop Layout](./Screenshot%20from%202022-10-25%2010-41-33.png)
-![Desktop Layout](./Screenshot%20from%202022-10-25%2010-42-18.png)
+![Desktop Layout](./Screenshot%20from%202022-10-25%2013-21-20.png)
 
 ### Built with
 

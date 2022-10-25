@@ -2,6 +2,15 @@ const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
+const mySelect = document.getElementById("mySelect");
+
+let output;
+function chooseTemp() {
+  output = mySelect.value;
+  console.log(output);
+  return output;
+}
+mySelect.addEventListener("click", chooseTemp);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -41,7 +50,7 @@ form.addEventListener("submit", (e) => {
   }
 
   //ajax here
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${apiKey}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${process.env.API}&units=metric`;
 
   fetch(url)
     .then((response) => response.json())
@@ -57,14 +66,25 @@ form.addEventListener("submit", (e) => {
           <span>${name}</span>
           <sup>${sys.country}</sup>
         </h2>
-        <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+
+        <div class="city-temp">${
+          output === "C"
+            ? `${Math.round(main.temp)}<sup>°C</sup>`
+            : `${Math.round((main.temp * 9) / 5 + 32)}<sup>°F</sup>`
+        } </div>
 
 
 
+
+       
         <div class="min-max">min ${main.temp_min}<sup>°C</sup>  
       </div>
       <div class="min-max">max ${main.temp_max}<sup>°C</sup></div>
         
+
+
+
+ 
         <figure>
           <img class="city-icon" src="${icon}" alt="${
         weather[0]["description"]
@@ -114,3 +134,16 @@ form.addEventListener("submit", (e) => {
     });
   }
 }); */
+
+function convert(degree) {
+  var x;
+  if (degree == "C") {
+    x = (document.getElementById("c").value * 9) / 5 + 32;
+    document.getElementById("f").value = Math.round(x);
+  } else {
+    x = ((document.getElementById("f").value - 32) * 5) / 9;
+    document.getElementById("c").value = Math.round(x);
+  }
+}
+
+// <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>

@@ -95,8 +95,12 @@ body {
   color: currentColor;
 }
 
-.top-banner form button {
+.top-banner form button,
+select {
+  color: white;
   font-size: 1rem;
+  border: none;
+  outline: none;
   font-weight: bold;
   letter-spacing: 0.1em;
   padding: 15px 20px;
