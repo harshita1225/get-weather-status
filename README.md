@@ -14,9 +14,13 @@
 
 #### Desktop Version
 
-![Desktop Layout](./Screenshot%20from%202022-10-25%2013-21-20.png)
-![Desktop Layout](./Screenshot%20from%202022-10-25%2013-21-20.png)
-![Desktop Layout](./Screenshot%20from%202022-10-25%2013-21-20.png)
+- weather status
+  ![Desktop Layout](./shot2.png)
+
+- weather with error status
+  ![Desktop Layout](./shot5.png)
+- weather status with error
+  ![Desktop Layout](./shot3.png)
 
 ### Built with
 

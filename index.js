@@ -4,7 +4,6 @@ const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
 const mySelect = document.getElementById("mySelect");
 
-const apiKey = "b78c4b5cbf9921ae49e185f48f94ed7f";
 let output;
 function chooseTemp() {
   output = mySelect.value;
