@@ -1,9 +1,5 @@
 # Weather status using api from openweather
 
-## Link
-
-- Live Site URL: [https://harshita1225.github.io/nature-tours/](https://harshita1225.github.io/nature-tours/)
-
 ### The challenge
 
 - design weather page and city weather cards
@@ -18,7 +14,9 @@
 
 #### Desktop Version
 
-![Desktop Layout](./Screenshot%20from%202022-10-25%2010-01-21.png)
+![Desktop Layout](./Screenshot%20from%202022-10-25%2010-40-10.png)
+![Desktop Layout](./Screenshot%20from%202022-10-25%2010-41-33.png)
+![Desktop Layout](./Screenshot%20from%202022-10-25%2010-42-18.png)
 
 ### Built with
 

@@ -113,9 +113,10 @@ body {
 .top-banner form .msg {
   position: absolute;
   bottom: -40px;
-  left: 50px;
+  left: 500px;
   max-width: 450px;
   min-height: 40px;
+  color: blueviolet;
 }
 
 .ajax-section {
