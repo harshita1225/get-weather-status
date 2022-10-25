@@ -77,10 +77,21 @@ form.addEventListener("submit", (e) => {
 
 
 
+        <div class="max-min">${
+          output === "C"
+            ? `min: ${Math.round(main.temp_min)}<sup>°C</sup>`
+            : `min: ${Math.round((main.temp_min * 9) / 5 + 32)}<sup>°F</sup>`
+        } </div>
+
+
+        <div class="min-max">${
+          output === "C"
+            ? `max: ${Math.round(main.temp_max)}<sup>°C</sup>`
+            : `max: ${Math.round((main.temp_max * 9) / 5 + 32)}<sup>°F</sup>`
+        } </div>
+
+
        
-        <div class="min-max">min ${main.temp_min}<sup>°C</sup>  
-      </div>
-      <div class="min-max">max ${main.temp_max}<sup>°C</sup></div>
         
 
 
@@ -136,15 +147,7 @@ form.addEventListener("submit", (e) => {
   }
 }); */
 
-function convert(degree) {
-  var x;
-  if (degree == "C") {
-    x = (document.getElementById("c").value * 9) / 5 + 32;
-    document.getElementById("f").value = Math.round(x);
-  } else {
-    x = ((document.getElementById("f").value - 32) * 5) / 9;
-    document.getElementById("c").value = Math.round(x);
-  }
-}
-
 // <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+
+//<div class="min-max">min ${main.temp_min}<sup>°C</sup>  </div>
+//<div class="min-max">max ${main.temp_max}<sup>°C</sup></div>
