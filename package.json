@@ -1,0 +1,23 @@
+{
+  "name": "weather-status",
+  "version": "1.0.0",
+  "description": "### The challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshita1225/get-weather-status.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshita1225/get-weather-status/issues"
+  },
+  "homepage": "https://github.com/harshita1225/get-weather-status#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
