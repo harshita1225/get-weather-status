@@ -27,7 +27,7 @@
 - Semantic HTML5 markup
 - CSS
 - vanilla Javascript
-- fectch
+- fetch & try.. catch
 - Flex box
 - Responsive design
 - Animations
